@@ -1,0 +1,282 @@
+ git init
+Initialized empty Git repository in C:/Users/ahmed/Desktop/ITI/git/lecture2/lab/.git/
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (master)
+$ touch ahmedtarek.txt
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (master)
+$ git add .
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (master)
+$ git commit -m "ahmed tarek hello 1"
+[master (root-commit) b1285fd] ahmed tarek hello 1
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ahmedtarek.txt
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (master)
+$ git branch -m main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git remote add origin https://github.com/AhmedTarek9/ahmedtarek--task2.git
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git remote -v
+origin  https://github.com/AhmedTarek9/ahmedtarek--task2.git (fetch)
+origin  https://github.com/AhmedTarek9/ahmedtarek--task2.git (push)
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 217 bytes | 72.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+ * [new branch]      main -> main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git branch
+* main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git branch dev
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git  branch test
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push mirgin dev
+fatal: 'mirgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push mirgin dev
+fatal: 'mirgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git checkout dev
+Switched to branch 'dev'
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ touch ahmedtarek2.txt
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git add .
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git commit -m "hello2"
+[dev 95892d6] hello2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ahmedtarek2.txt
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git push mirgin dev
+fatal: 'mirgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git branch
+* dev
+  main
+  test
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git push origin dev
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 238 bytes | 238.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/AhmedTarek9/ahmedtarek--task2/pull/new/dev
+remote:
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+ * [new branch]      dev -> dev
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git checkout test
+Switched to branch 'test'
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (test)
+$ git push origin test
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'test' on GitHub by visiting:
+remote:      https://github.com/AhmedTarek9/ahmedtarek--task2/pull/new/test
+remote:
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+ * [new branch]      test -> test
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (test)
+$ git checkout dev
+Switched to branch 'dev'
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ touch ahmedtarek3
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git add .
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git commit -m "hello 2"
+[dev 3a907bd] hello 2
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ahmedtarek3
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git push origin dev
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 221 bytes | 221.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+   95892d6..3a907bd  dev -> dev
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (dev)
+$ git checkout main
+Switched to branch 'main'
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git branch
+  dev
+* main
+  test
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git merge dev
+Updating b1285fd..3a907bd
+Fast-forward
+ ahmedtarek2.txt | 0
+ ahmedtarek3     | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ahmedtarek2.txt
+ create mode 100644 ahmedtarek3
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+   b1285fd..3a907bd  main -> main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git tag -a v1.4 -m "my version 1.4"
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin v1.4
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 161 bytes | 161.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+ * [new tag]         v1.4 -> v1.4
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git branch
+  dev
+* main
+  test
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ touch README.md
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git add .
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git commit -m "ahmed tarek final "
+[main 45de638] ahmed tarek final
+ 2 files changed, 26 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 bola.png
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 60.09 KiB | 6.01 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+   3a907bd..45de638  main -> main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git add .
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git commit -m "final"
+[main 5b5279a] final
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 377 bytes | 188.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+   45de638..5b5279a  main -> main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git add .
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git commit -m "Final1"
+[main 742ff74] Final1
+ 1 file changed, 1 insertion(+)
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 303 bytes | 303.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+   5b5279a..742ff74  main -> main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git add .
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git commit -m "final2"
+[main 4c70442] final2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+   742ff74..4c70442  main -> main
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ touch step.txt
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$
+
