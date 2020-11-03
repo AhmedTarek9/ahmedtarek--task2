@@ -24,4 +24,4 @@ print 'indent 4 spaces shcisajicj'
 
  [Link](http://google.com)
 
- ![Image](http://url/https://github.com/AhmedTarek9/ahmedtarek--task2/blob/main/bola.png)
+ ![Image](https://github.com/AhmedTarek9/ahmedtarek--task2/blob/main/bola.png)
