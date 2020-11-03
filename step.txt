@@ -280,3 +280,18 @@ $ touch step.txt
 ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
 $
 
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git branch -D test
+Deleted branch test (was b1285fd).
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin test
+error: src refspec test does not match any
+error: failed to push some refs to 'https://github.com/AhmedTarek9/ahmedtarek--task2.git'
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
+$ git push origin :test
+To https://github.com/AhmedTarek9/ahmedtarek--task2.git
+ - [deleted]         test
+
+ahmed@Ahmedtarek MINGW64 ~/Desktop/ITI/git/lecture2/lab (main)
